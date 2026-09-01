@@ -60,7 +60,7 @@
     else if (ac.status === ac.IDLE) { setCache("ملفات الكاش جاهزة للاستخدام", true); go(); }
     else if (ac.status === ac.UPDATEREADY) { try { ac.swapCache(); } catch (e) {} setCache("تم تحميل التحديث بنجاح", true); waitForTap("تحديث جاهز — اضغط للتنفيذ", function () { location.reload(); }); } else {
         setCache("جارٍ فحص التخزين المؤقت...");
-        ac.addEventListener("downloading", function () { setCache("يتم سحب الملفات للمرة الأولى..."); }, false);
+        ac.addEventListener("downloading", function () { setCache("محمود ابورجب لخدمات البلاي ستيشن..."); }, false);
         ac.addEventListener("progress", function (e) { if (e && e.total) { setCache("جاري التخزين: " + Math.round((e.loaded / e.total) * 100) + "%"); } }, false);
         ac.addEventListener("cached", function () { setCache("اكتمل التخزين — يمكنك الاستخدام بدون نت", true); waitForTap("النظام جاهز — اضغط للتشغيل", go); }, false);
         ac.addEventListener("updateready", function () { try { ac.swapCache(); } catch (e) {} setCache("التحديث جاهز", true); waitForTap("تحديث متوفر — اضغط لإعادة التحميل", function () { location.reload(); }); }, false);
