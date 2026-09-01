@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PRO JAILBREAK</title>
+<title>abo ragp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Black+Ops+One&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
 <div class="hud-container">
   <h1 class="brand-title">PRO JAILBREAK</h1>
   <div class="brand-sub">FW 11.00 - 12.00 - 13.00</div>
-  <div class="powered-by">POWERED BY <span>MAHMOUD FATHY</span></div>
+  <div class="powered-by">t01111371168 <span>MAHMOUD aboragp</span></div>
   <div class="status-panel"><div id="state">جارٍ فحص النظام...</div><div id="det"></div><div id="cache"></div></div>
 </div>
 <div class="footer-sys">SYS_CORE v2.0</div>
@@ -47,10 +47,10 @@
     var m = /PlayStation\s+4[\/ ](\d+)\.(\d+)/.exec(navigator.userAgent);
     if (m) { var minor = parseInt(m[2], 16), ms = minor.toString(16); if (ms.length < 2) ms = "0" + ms; key = m[1] + "." + ms; fwnum = parseInt(m[1], 10) * 100 + parseInt(ms, 10); }
     var bug = null, why = "", forced = params.get("bug");
-    if (forced === "lapse" || forced === "poops") { bug = forced; why = "تم التحديد يدوياً ?bug=" + forced; } else if (!key) { why = "تحذير: هذا المتصفح ليس بلايستيشن 4"; } else if (fwnum <= 1202) { bug = "lapse"; why = "النظام مدعوم: توجيه مسار (Lapse)"; } else if (fwnum >= 1250) { bug = "poops"; why = "النظام مدعوم: توجيه مسار (Poops)"; } else { why = "تحذير: هذا الإصدار غير مدعوم حالياً"; }
+    if (forced === "lapse" || forced === "poops") { bug = forced; why = "تم التحديد يدوياً ?bug=" + forced; } else if (!key) { why = "محمود ابورجب: لصيانة بلايستيشن 4"; } else if (fwnum <= 1202) { bug = "lapse"; why = "النظام مدعوم: توجيه مسار (Lapse)"; } else if (fwnum >= 1250) { bug = "poops"; why = "النظام مدعوم: توجيه مسار (Poops)"; } else { why = "تحذير: هذا الإصدار غير مدعوم حالياً"; }
     var fwDisplay = key ? "<b>V_" + key + "</b>" : "<span style='color:#8f9eb0;'>UNKNOWN</span>", bugDisplay = bug ? "<b style='color:var(--neon-purple);'>" + bug.toUpperCase() + "_CHAIN</b>" : "<span style='color:#8f9eb0;'>N/A</span>";
     detEl.innerHTML = "OS_VERSION: " + fwDisplay + " | EXPLOIT: " + bugDisplay + "<br><br><span style='color: var(--neon-blue); font-size:16px;'>" + why + "</span>";
-    if (!bug) { setState("إصدار غير مدعوم ACCESS DENIED", "bad"); return; }
+    if (!bug) { setState(محمود ابورجب ACCESS DENIED", "bad"); return; }
     var target = (bug === "lapse" ? "run_lapse.html" : "run_poops.html") + location.search;
     function go() { setState("جارٍ تهيئة الثغرة INITIATING...", "warn"); setTimeout(function() { location.replace(target); }, 500); }
     function waitForTap(msg, action) { setState(msg, "warn"); function fire() { window.removeEventListener("click", fire); window.removeEventListener("keydown", fire); action(); } window.addEventListener("click", fire); window.addEventListener("keydown", fire); }
